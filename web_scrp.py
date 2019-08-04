@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from csv import writer
 import datetime
 import time
+#test
 user_input = int(input("enter how long you want the code to run: "))
 user_input1 = int(input("\n enter 1 for hour and 2 for mins: "))
 user_input2 = int(input("\n enter the time interval: "))
