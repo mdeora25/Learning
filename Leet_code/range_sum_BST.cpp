@@ -14,7 +14,7 @@
 #include <string.h>
 #include <vector>
 using namespace std;
-
+// i started writing code here
 class Solution {
 public:
     int rangeSumBST(TreeNode* root, int L, int R) {
@@ -31,7 +31,7 @@ public:
         
     }
 };
-
+//stopped writing code
 void trimLeftTrailingSpaces(string &input) {
     input.erase(input.begin(), find_if(input.begin(), input.end(), [](int ch) {
         return !isspace(ch);
