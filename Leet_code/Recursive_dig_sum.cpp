@@ -5,6 +5,7 @@
  */
 #include <bits/stdc++.h>
 #include <vector>
+
 using namespace std;
 
 vector<string> split_string(string);
