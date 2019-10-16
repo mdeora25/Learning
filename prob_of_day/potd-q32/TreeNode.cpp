@@ -43,10 +43,18 @@ int calculate_height(TreeNode* root){
   int leftheight = 0;
   int rightheight = 0;
   if(root->left_ != NULL){
-    leftheight = calculate_height(root->left_);
+    TreeNode * temp = root->left_;
+    while (temp != NULL) {
+      leftheight++;
+      temp = temp->left_;
+    }
   }
   if(root->right_ != NULL){
-    rightheight = calculate_height(root->right_);
+     TreeNode * temp = root->right_;
+    while (temp != NULL) {
+      rightheight++;
+      temp = temp->right_;
+    }
   }
   if(rightheight >= leftheight){
     return rightheight + 1;
