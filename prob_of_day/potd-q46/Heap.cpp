@@ -9,7 +9,7 @@ void Heap::_percolateDown(int hole) {
     if (left<size() && _data[left]>_data[smallest]) smallest=left;
     if (right<size() && _data[right]>_data[smallest]) smallest=right;
     if (smallest!=hole) {
-        swap(_data[hole], _data[smallest]);
+        std::swap(_data[hole], _data[smallest]);
         _percolateDown(smallest);
     }
 }
