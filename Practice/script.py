@@ -445,3 +445,15 @@ def damage_list(hurricane_data):
         ):
             hold[1].append(hurricane_data[data])
     return hold
+
+# what month had the most hurrican
+
+def month_list(hurricane_data):
+    hold = dict()
+    for data in hurricane_data:
+        month = hurricane_data[data]['Month']
+        if month not in hold:
+            hold[month] = 1
+        else:
+            hold[month] += 1
+    return hold
